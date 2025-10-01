@@ -1,8 +1,10 @@
-import { BadRequestException, Body, ConflictException, Controller, Get, NotFoundException, Param, Post, Put, Response } from '@nestjs/common';
+import { BadRequestException, Body, Controller, Get, NotFoundException, Param, Post, Put, UseGuards } from '@nestjs/common';
 import { AppService } from './app.service';
 import { Battery, BatteryList, Measurement } from './types';
+import { ApiKeyGuard } from './auth.guard';
 
 @Controller()
+@UseGuards(ApiKeyGuard)
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
