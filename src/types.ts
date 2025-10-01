@@ -12,6 +12,20 @@ export class Battery {
   capacity: number;
   location: string;
   measurements: Measurement[];
+
+  constructor(
+    id: number,
+    serialNumber: string,
+    capacity: number,
+    location: string,
+    measurements?: Measurement[],
+  ) {
+    this.id = id;
+    this.serialNumber = serialNumber;
+    this.capacity = capacity;
+    this.location = location;
+    this.measurements = measurements ?? [];
+  }
 }
 
 export class Measurement {
