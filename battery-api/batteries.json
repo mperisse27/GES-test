@@ -1,0 +1,58 @@
+{
+  "batteries": [
+    {
+      "id": 1,
+      "serialNumber": "SN12345",
+      "capacity": 5000,
+      "location": "Paris",
+      "measurements": [
+        {
+          "timestamp": "2025-09-29T10:00:00Z",
+          "chargeLevel": 80,
+          "temperature": 25
+        },
+        {
+          "timestamp": "2025-09-29T12:00:00Z",
+          "chargeLevel": 75,
+          "temperature": 26
+        },
+        {
+          "timestamp": "2025-10-29T12:00:00Z",
+          "chargeLevel": 95,
+          "temperature": 260
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "serialNumber": "SN67890",
+      "capacity": 6000,
+      "location": "Lyon",
+      "measurements": [
+        {
+          "timestamp": "2025-09-29T10:30:00Z",
+          "chargeLevel": 90,
+          "temperature": 24
+        },
+        {
+          "timestamp": "2025-09-29T11:30:00Z",
+          "chargeLevel": 85,
+          "temperature": 25
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "serialNumber": "OK1209",
+      "capacity": 2000,
+      "location": "London",
+      "measurements": [
+        {
+          "timestamp": "2025-08-29T10:00:00Z",
+          "chargeLevel": 40,
+          "temperature": 22
+        }
+      ]
+    }
+  ]
+}
